@@ -1,101 +1,146 @@
-import Image from "next/image";
 
-export default function Home() {
+import Image from 'next/image';
+import Link from 'next/link';
+import './homePage.css'
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      
+      <div className="hero-section">
+        <center>
+          <h1>Welcome to AW Outfits</h1>
+          <h2>Wear Your Attitude</h2>
+        </center>
+      </div>
+       {/* Product Section */}
+       <div className="product-section">
+        <h2 className="section-title">Please visit our products</h2>
+        <div className="product-grid">
+          {/* Product 1 */}
+          <div className="product-card">
+            <Image src="/p1.jpg" alt="Product 1" width={300} height={200} />
+            <h3>Product Name 1</h3>
+            <p>Product description goes here. This is an amazing outfit!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+          {/* Product 2 */}
+          <div className="product-card">
+            <Image src="/p2.jpg" alt="Product 2" width={300} height={200} />
+            <h3>Product Name 2</h3>
+            <p>Product description goes here. Look stylish with this product!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+          {/* Product 3 */}
+          <div className="product-card">
+            <Image src="/p3.jpg" alt="Product 3" width={300} height={200} />
+            <h3>Product Name 3</h3>
+            <p>Product description goes here. A must-have in your wardrobe!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+          {/* Product 4 */}
+          <div className="product-card">
+            <Image src="/p4.jpg" alt="Product 4" width={300} height={200} />
+            <h3>Product Name 4</h3>
+            <p>Product description goes here. Trendy and comfortable!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+          {/* Product 5 */}
+          <div className="product-card">
+            <Image src="/p5.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+           {/* Product 6 */}
+           <div className="product-card">
+            <Image src="/p6.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+           {/* Product 7 */}
+           <div className="product-card">
+            <Image src="/p7.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+         
+          {/* Product 8 */}
+          <div className="product-card">
+            <Image src="/p8.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+         
+          {/* Product 9 */}
+          <div className="product-card">
+            <Image src="/p9.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+         
+          {/* Product 10 */}
+          <div className="product-card">
+            <Image src="/p10.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+         
+          {/* Product 11 */}
+          <div className="product-card">
+            <Image src="/p11.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+         
+          {/* Product 12 */}
+          <div className="product-card">
+            <Image src="/p12.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+         
+          {/* Product 13 */}
+          <div className="product-card">
+            <Image src="/p13.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+         
+          {/* Product 14 */}
+          <div className="product-card">
+            <Image src="/p14.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+         
+          {/* Product 15 */}
+          <div className="product-card">
+            <Image src="/p15.jpg" alt="Product 5" width={300} height={200} />
+            <h3>Product Name 5</h3>
+            <p>Product description goes here. Fashion meets comfort!</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+         
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+         
+          {/* Add more products as necessary */}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div>
+     <center><Link href="/product">
+ <button>Visit more product</button>
+</Link></center> 
+
+      </div>
     </div>
   );
 }
