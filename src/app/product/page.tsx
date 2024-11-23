@@ -1,23 +1,5 @@
-// import React from 'react';
-// import './product.css';
-
-// export default function ProductsPage() {
-//   return (
-//     <div className="products-container">
-//       {Array.from({ length: 25 }).map((_, index) => (
-//         <div key={index} className="product-card">
-//           <img src="https://via.placeholder.com/150" alt={`Product ${index + 1}`} />
-//           <h3>Product {index + 1}</h3>
-//           <p>Description of Product {index + 1}</p>
-//           <button>Add to Cart</button>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
-
 import React from 'react';
-import './product.css';
+import './page.css';
 import Image from 'next/image';
 export default function ProductsPage() {
   const products = [
@@ -26,15 +8,15 @@ export default function ProductsPage() {
     { id: 3, name: 'Product 3', description: 'Description of Product 3', image: '/p23.jpg' },
     { id: 4, name: 'Product 4', description: 'Description of Product 4', image: '/p23.jpg' },
     { id: 5, name: 'Product 5', description: 'Description of Product 5', image: '/p24.jpg' },
-    { id: 5, name: 'Product 5', description: 'Description of Product 5', image: '/p25.jpg' },
-    { id: 5, name: 'Product 5', description: 'Description of Product 5', image: '/p26.jpg' },
-    { id: 5, name: 'Product 5', description: 'Description of Product 5', image: '/p27.jpg' },
-    { id: 5, name: 'Product 5', description: 'Description of Product 5', image: '/p28.jpg' },
-    { id: 5, name: 'Product 5', description: 'Description of Product 5', image: '/p29.jpg' },
-    { id: 5, name: 'Product 5', description: 'Description of Product 5', image: '/p30.jpg' },
-    { id: 5, name: 'Product 5', description: 'Description of Product 5', image: '/p31.jpg' },
-    { id: 5, name: 'Product 5', description: 'Description of Product 5', image: '/p32.jpg' },
-    { id: 5, name: 'Product 5', description: 'Description of Product 5', image: '/p33.jpg' },
+    { id: 5, name: 'Product 5', description: 'Description of Product 6', image: '/p25.jpg' },
+    { id: 5, name: 'Product 5', description: 'Description of Product 7', image: '/p26.jpg' },
+    { id: 5, name: 'Product 5', description: 'Description of Product 8', image: '/p27.jpg' },
+    { id: 5, name: 'Product 5', description: 'Description of Product 9', image: '/p28.jpg' },
+    { id: 5, name: 'Product 5', description: 'Description of Product 10', image: '/p29.jpg' },
+    { id: 5, name: 'Product 5', description: 'Description of Product 11', image: '/p30.jpg' },
+    { id: 5, name: 'Product 5', description: 'Description of Product 12', image: '/p31.jpg' },
+    { id: 5, name: 'Product 5', description: 'Description of Product 13', image: '/p32.jpg' },
+    { id: 5, name: 'Product 5', description: 'Description of Product 14', image: '/p33.jpg' },
     // 20 aur products ka data yahan add kar sakte ho.
   ];
 

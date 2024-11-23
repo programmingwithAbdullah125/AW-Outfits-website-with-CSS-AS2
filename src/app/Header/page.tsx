@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import './header.css'
+import './page.css'
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -12,7 +12,7 @@ const Navbar = () => {
       </div>
       <ul className="nav-link">
         <li><Link href="/">Home</Link></li>
-        <li><Link href="/about">About Us</Link></li>
+        <li><Link href="/About">About Us</Link></li>
         <li><Link href="/contact">Contact Us</Link></li>
         <li><Link href="/services">Our Service</Link></li>
         <li><Link href="/product">Product</Link></li>
